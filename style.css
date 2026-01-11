@@ -68,10 +68,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 20px;
   font-weight: 400;
   transition: all 0.5s ease-in;
 }
+
 nav a:hover,
 .trial-btn:hover {
   opacity: 0.5;
@@ -395,6 +396,133 @@ gap: 10px;
 
 /* section4 ends */
 
+/* section5 starts */
+.section5{
+  background: #111827;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 2em 2em;
+color: white;
+gap: 30px;
+line-height: 1.3;
+}
+
+.sec5-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+  gap: 10px;
+ 
+}
+.sec5-content h2, .sec6-content h2{
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.sec5-cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.sec5-card{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+width: 250px;
+height: 300px;
+border-radius: 15px;
+overflow: hidden;
+
+}
+.card-p1{
+  width: 100%;
+  height: 60%;
+  background-color: #EEF1F7;
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.card-p1 .img1{
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+
+.card-p1 .img2{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+.card-p2{
+background-color: white;
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 40%;
+color: black;
+justify-content: center;
+padding: 0 1em;
+}
+.card3{
+  width: 130px;
+}
+
+/* section5 ends */
+
+/* section6 starts */
+.section6{
+  margin: 2em 1em;
+  background-color: #EEF1F7;
+  
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  gap: 15px;
+  
+  
+}
+.sec6-content{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.check{
+  display: flex;
+  gap: 5px;
+}
+.sec6-img img,.section7 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* section6 ends*/
+
+/* section7 starts */
+.section7{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  padding: 1em;
+}
+/* section7 ends */
+
+
 @media (max-width: 530px) {
   .display-img {
     flex-direction: column;
@@ -435,5 +563,12 @@ gap: 10px;
 
   .section2 {
     flex-direction: row;
+  }
+  .section6{
+    flex-direction: row;
+  }
+  .sec6-content,.sec6-img{
+     flex: 1;
+    min-width: 0;
   }
 }
