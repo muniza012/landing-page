@@ -713,7 +713,83 @@ margin-top: 80px;
   align-items: flex-start;
 }
 /* section11 ends */
+/* section12 starts */
+.section12{
+  background-color: #EEF1F7;
+  padding: 2em 1em;
+  
+}
+.section12 h2,.section12 p{
+  text-align: center;
+  padding: 0.5em;
+}
+.q-a{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1em 0;
+}
 
+.q-a .question{
+ margin: 0.5em 0;
+border-bottom: 1px solid rgba(128, 128, 128, 0.445);
+}
+
+.q-a .question span{
+  font-weight: 700;
+ 
+  
+}
+
+.q-a .question p {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  
+}
+
+.q-a .question:hover p {
+  max-height: 200px; 
+  opacity: 1;
+}
+
+
+/* section12 ends */
+
+
+/* section 13 starts */
+.section13{
+background: #111827;
+color: white;
+display: flex;
+gap: 20px;
+padding: 1em;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+.sec13-content{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+ flex: 0 0 180px;  
+
+
+}
+.sec13-content h3{
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.sec13-content ul li{
+  list-style: none;
+  font-size: 1em;
+}
+
+/* section 13 ends */
 @media (max-width: 530px) {
   .display-img {
     flex-direction: column;
@@ -736,6 +812,13 @@ margin-top: 80px;
   .hero-section {
     padding-top: 120px;
   }
+}
+
+@media(max-width:990px){
+.section13{
+  justify-content: flex-start;
+  gap: 30px;
+}
 }
 
 @media (min-width: 800px) {
